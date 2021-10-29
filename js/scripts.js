@@ -83,8 +83,8 @@ function changeRangeArray(array) {
   let changedInputArray = [];
   const firstExceptionNumber = [1];
   array.forEach(function(element) {
-    if (firstExceptionNumber.includes(element)) {
-      array.forEach(function(element))
+    if (elmVar = element && elmVar.includes(firstExceptionNumber)) {
+      array.forEach(function())
       console.log(array)
       changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
     }
@@ -92,7 +92,7 @@ function changeRangeArray(array) {
   return(changedInputArray);
 };
 
-function changeRangeArray(array) {
+/*function changeRangeArray(array) {
   let changedInputArray = [];
   const firstExceptionNumber = [1];
   array.forEach(function(element, i) {
@@ -104,4 +104,23 @@ function changeRangeArray(array) {
     }
   })
   return(changedInputArray);
-}; 
+};  */
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element) {
+    const index = array.findIndex(element => {
+      if(element.includes(firstExceptionNumber)) {
+        array.splice(index, 1, "Beep!");
+      }
+    });
+    /*if (element.includes(firstExceptionNumber)) {
+      let index = array.indexOf(element);
+      array.splice(index, 1, "Beep!")
+      console.log(array)
+      changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
+    }*/
+  })
+  return(changedInputArray);
+};
