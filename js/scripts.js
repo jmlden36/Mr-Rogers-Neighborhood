@@ -3,7 +3,7 @@ function inputChangeToRangeArray(input) {
   for (let i = 0; i <= input; i++) {
     inputArray.push(i);
   }
-  return(inputArray)
+  return(changeRangeArray(inputArray))
 };
 
 function changeRangeArray(array) {
@@ -11,7 +11,46 @@ function changeRangeArray(array) {
   const firstExceptionNumber = [1];
   array.forEach(function(element) {
     if (firstExceptionNumber.includes(element)) {
-      changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
+      let newArray = array.splice(element, element, 1);
+      array++;
+      console.log(array);
+      console.log(newArray);
+      changedInputArray = newArray.join(", ").replace(/[1]/g, "Beep!");
+    }
+  })
+  return(changedInputArray);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element) {
+    if (firstExceptionNumber.includes(element)) {
+      changedInputArray = array.join(", ").replace(element, element, "Beep!");
+    }
+  })
+  return(changedInputArray);
+};
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element) {
+    if (firstExceptionNumber.includes(element)) {
+      arrayElement = element
+      console.log(arrayElement)
+      changedInputArray = array.splice(arrayElement, arrayElement, "Beep!");
     }
   })
   return(changedInputArray);
@@ -23,7 +62,24 @@ function changeRangeArray(array) {
   const firstExceptionNumber = [1];
   array.forEach(function(element) {
     if (firstExceptionNumber.includes(element)) {
-      changedInputArray = array.splice(element, element, "Beep!");
+      
+      console.log(array)
+      changedInputArray = array.join(", ").split(", ")
+      
+    }
+  })
+  return(changedInputArray);
+};
+
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element) {
+    if (firstExceptionNumber.includes(element)) {
+      array.forEach(function(element))
+      console.log(array)
+      changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
     }
   })
   return(changedInputArray);
