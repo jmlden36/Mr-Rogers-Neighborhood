@@ -10,16 +10,24 @@ function changeRangeArray(array) {
   let changedInputArray = [];
   const firstExceptionNumber = [1];
   array.forEach(function(element) {
-    if (firstExceptionNumber.includes(element)) {
-      let newArray = array.splice(element, element, 1);
-      array++;
-      console.log(array);
-      console.log(newArray);
-      changedInputArray = newArray.join(", ").replace(/[1]/g, "Beep!");
+    if (element === 1 || firstExceptionNumber.includes(element)) {
+
+      changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
     }
   })
   return(changedInputArray);
-};
+}; 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,8 +56,7 @@ function changeRangeArray(array) {
   const firstExceptionNumber = [1];
   array.forEach(function(element) {
     if (firstExceptionNumber.includes(element)) {
-      arrayElement = element
-      console.log(arrayElement)
+      
       changedInputArray = array.splice(arrayElement, arrayElement, "Beep!");
     }
   })
@@ -84,3 +91,17 @@ function changeRangeArray(array) {
   })
   return(changedInputArray);
 };
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element, i) {
+    if (firstExceptionNumber.includes(element)) {
+      let index = array.indexOf(element);
+      array.splice(index, 1, "Beep!")
+      console.log(array)
+      changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
+    }
+  })
+  return(changedInputArray);
+}; 
