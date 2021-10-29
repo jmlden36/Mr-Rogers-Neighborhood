@@ -1,6 +1,7 @@
 function inputChange(input) {
-  if (input !== Number) {
-    return("'(input)' is not a number");
+  let inputArray = [];
+  for (let i = 0; i <= input; i++) {
+    inputArray.push(i);
   }
-  return(inputArray=[input]);
+  return(inputArray)
 };
