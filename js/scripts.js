@@ -8,9 +8,22 @@ function inputChangeToRangeArray(input) {
 
 function changeRangeArray(array) {
   let changedInputArray = [];
+  const firstExceptionNumber = [1];
   array.forEach(function(element) {
-    if (element === 1) {
+    if (firstExceptionNumber.includes(element)) {
       changedInputArray = array.join(", ").replace(/[1]/g, "Beep!");
+    }
+  })
+  return(changedInputArray);
+};
+
+
+function changeRangeArray(array) {
+  let changedInputArray = [];
+  const firstExceptionNumber = [1];
+  array.forEach(function(element) {
+    if (firstExceptionNumber.includes(element)) {
+      changedInputArray = array.splice(element, element, "Beep!");
     }
   })
   return(changedInputArray);
