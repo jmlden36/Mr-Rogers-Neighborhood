@@ -37,3 +37,7 @@ Expected Output: ["0", "Beep!", "Boop!", "3", "4"]
 Test: "If an element of the array includes the number 1 it should change that element to 'Beep!', and if an element of the array includes the number 2 it should change that element to 'Boop!', and if an element of the array includes the number 3 it should change that element to 'Won't you be my neighbor?'"
 Code: changeRangeArray([0, 1, 2, 3, 4]);
 Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"]
+
+Test: "It should make the 3 exception the most important, then 2 the 2 exception, then the 1 exception"
+Code: changeRangeArray([1, 2, 3, 4, 12, 13, 23]);
+Expected Output: ["Beep!, "Boop!", "Won't you be my neighbor", "4", "Boop!", "Won't you be my neighbor", "Won't you be my neighbor"]
