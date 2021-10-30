@@ -21,3 +21,7 @@ Expected Output: "0, 1, 2"
 Test: "It should turn that string into an array of individual string values"
 Code: changeRangeArray([0, 1, 2])
 Expected Output: ["0", "1", "2"]
+
+Test: "It should check if the number 1 is included in any of the elements of the new string array"
+Code: changeRangeArray([0, 1, 2, 3, 4]);
+Expected Output: true
