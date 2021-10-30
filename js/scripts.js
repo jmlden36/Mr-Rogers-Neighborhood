@@ -7,6 +7,6 @@ function inputChangeToRangeArray(input) {
 };
 
 function changeRangeArray(array) {
-  let numberArray = array.slice().join(", ");
+  let numberArray = array.slice().join(", ").split(", ");
   return numberArray;
 }
