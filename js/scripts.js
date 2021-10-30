@@ -6,8 +6,7 @@ function inputChangeToRangeArray(input) {
   return(inputArray);
 };
 
-function changeRangeArray(inputArray) {
-  if (inputArray === 1); {
-    return true;
-  }
+function changeRangeArray(array) {
+  let numberArray = array.slice();
+  return numberArray;
 }
