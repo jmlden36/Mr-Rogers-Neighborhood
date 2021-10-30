@@ -1,5 +1,9 @@
-function inputToArray(input) {
-  let numberArray = [input];
-  return(numberArray);
+function inputChangeToRangeArray(input) {
+  let inputArray = [];
+  for (let i = 0; i <= input; i++) {
+    inputArray.push(i);
+  }
+  return(inputArray);
 };
+
 
