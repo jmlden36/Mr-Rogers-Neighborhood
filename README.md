@@ -12,6 +12,10 @@ Test: "It should take in a number, declare an array with elements that start wit
 Code: inputChangeToRangeArray(4)
 Expected Output: "0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"
 
+Test: "It should return 'Please input a number' if the input is anything but a number"
+Code: inputChangeToRangeArray("hi")
+Expected Output: "Please input a number"
+
 Describe: changeRangeArray()
 
 Test: "It should take the inputted array and declare a new array with the inputted array's values"
