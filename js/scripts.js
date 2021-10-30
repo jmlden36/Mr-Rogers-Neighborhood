@@ -8,5 +8,13 @@ function inputChangeToRangeArray(input) {
 
 function changeRangeArray(array) {
   let numberArray = array.slice().join(", ").split(", ");
-  return numberArray;
-}
+  const firstExceptionNumber = [1];
+  numberArray.forEach(function(element) {
+    if (element.includes(firstExceptionNumber)) {
+      console.log(true)
+      
+    }
+  })
+  return(numberArray);
+};
+
