@@ -8,6 +8,10 @@ Test: "It should return an array of numbers starting with 0 and up to the input 
 Code: inputChangeToRangeArray(4);
 Expected Output: [0, 1, 2, 3, 4]
 
+Test: "It should take in a number, declare an array with elements that start with 0 and go up to the inputted number, and call changeRangeArray on that array to have the desired string output"
+Code: inputChangeToRangeArray(4)
+Expected Output: "0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"
+
 Describe: changeRangeArray()
 
 Test: "It should take the inputted array and declare a new array with the inputted array's values"
