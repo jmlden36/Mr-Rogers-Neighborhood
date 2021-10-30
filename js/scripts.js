@@ -23,7 +23,7 @@ function changeRangeArray(array) {
         numberArray.splice(index, 1, "Beep!");
     }    
   })
-  return(numberArray);
+  return(numberArray.join(", "));
 };
 
 
