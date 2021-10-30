@@ -1,7 +1,4 @@
 function inputChangeToRangeArray(input) {
-  if (input !==Number) {
-    return("Please input a number")
-  }
   let inputArray = [];
   for (let i = 0; i <= input; i++) {
     inputArray.push(i);
@@ -22,8 +19,8 @@ function changeRangeArray(array) {
       let index = numberArray.indexOf(element);
       numberArray.splice(index, 1, "Boop!");
     } else if (element.includes(firstExceptionNumber)) {
-        let index = numberArray.indexOf(element);
-        numberArray.splice(index, 1, "Beep!");
+      let index = numberArray.indexOf(element);
+      numberArray.splice(index, 1, "Beep!");
     }    
   })
   return(numberArray.join(", "));
@@ -33,6 +30,7 @@ $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
     const formInput = $("#formInput").val();
+    console.log(formInput)
     $("#output").text(inputChangeToRangeArray(formInput));
   });
 });
