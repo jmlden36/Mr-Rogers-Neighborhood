@@ -11,10 +11,11 @@ function changeRangeArray(array) {
   const firstExceptionNumber = [1];
   numberArray.forEach(function(element) {
     if (element.includes(firstExceptionNumber)) {
-      console.log(true)
-      
+      let index = numberArray.indexOf(element);
+      numberArray.splice(index, 1, "Beep!")
     }
   })
   return(numberArray);
 };
+
 
