@@ -29,3 +29,7 @@ Expected Output: true, ["0", "1", "2", "3", "4"]
 Test: "If an element of the array includes the number 1 it should change that element to 'Beep!'"
 Code: changeRangeArray([0, 1, 2, 3, 4]);
 Expected Output: ["0", "Beep!", "2", "3", "4"]
+
+Test: "If an element of the array includes the number 1 it should change that element to 'Beep!', and if an element of the array includes the number 2 it should change that element to 'Boop!'"
+Code: changeRangeArray([0, 1, 2, 3, 4]);
+Expected Output: ["0", "1", "Boop!", "3", "4"]
