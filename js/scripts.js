@@ -6,4 +6,8 @@ function inputChangeToRangeArray(input) {
   return(inputArray);
 };
 
-
+function changeRangeArray(inputArray) {
+  if (inputArray === 1); {
+    return true;
+  }
+}
