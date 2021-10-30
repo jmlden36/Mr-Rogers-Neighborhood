@@ -16,4 +16,4 @@ Expected Output: [1]
 
 Test: "It should take the new array and turn it in to a string"
 Code: changeRangeArray([0, 1, 2]);
-Expected Output: "0,1,2"
+Expected Output: "0, 1, 2"
