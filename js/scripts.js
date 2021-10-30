@@ -3,7 +3,7 @@ function inputChangeToRangeArray(input) {
   for (let i = 0; i <= input; i++) {
     inputArray.push(i);
   }
-  return(inputArray);
+  return(changeRangeArray(inputArray));
 };
 
 function changeRangeArray(array) {
