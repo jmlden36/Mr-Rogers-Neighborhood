@@ -1,4 +1,7 @@
 function inputChangeToRangeArray(input) {
+  if (input !==Number) {
+    return("Please input a number")
+  }
   let inputArray = [];
   for (let i = 0; i <= input; i++) {
     inputArray.push(i);
