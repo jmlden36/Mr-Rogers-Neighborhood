@@ -18,3 +18,15 @@ body {
   left: 0;
   color: rgb(0, 0, 0);
 }
+
+.btn {
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid black;
+  margin: 0px;
+  color: black;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
