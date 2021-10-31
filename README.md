@@ -68,7 +68,7 @@ _Mr. Rogers Neighborhood is a free to use, interactive HTML webpage that allows 
 * **Code**: changeRangeArray([1, 2, 3, 4, 12, 13, 23]);
 * **Expected Output**: ["Beep!, "Boop!", "Won't you be my neighbor", "4", "Boop!", "Won't you be my neighbor", "Won't you be my neighbor"]
 
-**Test**: "It should return the mutated input array changed into a list of strings"
+**Test**: "It should return the mutated input array changed into a string"
 * **Code**: changeRangeArray([1, 2, 3, 4, 12, 13, 23]);
 * **Expected Output**: "Beep!, Boop!, Won't you be my neighbor, 4, Boop!, Won't you be my neighbor, Won't you be my neighbor"
 
