@@ -32,7 +32,7 @@ _Mr. Rogers Neighborhood is a free to use, interactive HTML webpage that allows 
 
 **Test**: "It should take in a number, declare an array with elements that start with 0 and go up to the inputted number, and call changeRangeArray on that array to have the desired string output"
 * **Code**: inputChangeToRangeArray(4)
-* **Expected Output**: "0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"
+* **Expected Output**: "0, Beep!, Boop!, Won't you be my neighbor?, 4"
 
 **Describe: changeRangeArray()**
 
@@ -70,7 +70,7 @@ _Mr. Rogers Neighborhood is a free to use, interactive HTML webpage that allows 
 
 **Test**: "It should return the mutated input array changed into a list of strings"
 * **Code**: changeRangeArray([1, 2, 3, 4, 12, 13, 23]);
-* **Expected Output**: "Beep!, Boop!, Won't you be my neighbor, 4, Boop!, Won't you be my neighbor, Won't you be my neighbor
+* **Expected Output**: "Beep!, Boop!, Won't you be my neighbor, 4, Boop!, Won't you be my neighbor, Won't you be my neighbor"
 
 ## Setup/Installation Requirements
 
