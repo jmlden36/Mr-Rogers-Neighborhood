@@ -30,7 +30,6 @@ $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
     const formInput = $("#formInput").val();
-    console.log(formInput)
     $("#output").text(inputChangeToRangeArray(formInput));
   });
 });
